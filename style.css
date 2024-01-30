@@ -122,21 +122,38 @@ body{
 }
 
 input.search{
+    justify-content: center;
+    text-align: center;
     padding: 9px 10px 9px 32px;
     outline: none;
     font-size: 18px;
     border: 10px;
     color: #444;
-    border: 3px solid #a50559;
+    border: 3px solid black;
     background: #fff url("assets/right-arrow-alt-regular-24.png") 
         no-repeat 9px center;
-    width: 60px;
+    width: 600px;
     transition: all .5s;
 }
 
-input.search:hover{
-    width: 200px;
-    background-color: #fff;
-    border-color: #8c10b3;
-    box-shadow: 0 0 5px #6dcff680;
+.titulo {
+    text-align: center;
+    font-family: 'GT America Standard', sans-serif;
+    color: #000000;
+    font-size: 80px;
+    letter-spacing: -4px;
+    line-height: 76ox;
+    font-weight: 400;
+    margin: 0 0 1rem;
+}
+.seccion {
+    text-align: center;
+    height: 300px;
+    position: relative;
+    background-color: #DADBF1;
+    color: #fff;
+    overflow: hidden;
+}
+.search{
+    position: relative;
 }
