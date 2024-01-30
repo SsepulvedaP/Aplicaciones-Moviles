@@ -4,12 +4,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-family: 'Nunito', sans-serif, 'GT America Standard'; 
+    font-size: 24px;
+
 }
 
 body{
     background-color: white;
+    
 }
 
 .header{
@@ -17,35 +19,50 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
-    padding: 5px 10%;
+    height: 87px;
+    padding: 5px 8.0%;
 }
 
-.header .logo{
+.header .logo:hover{
+    cursor: pointer;
+    background-image: url(assets/LogoInicialG.png);
+    
+}
+
+.header .logo {
+    height: 59px;
+    width: 240px;
+    transition: all 0.3s;
+    background-image: url(assets/LogoInicial.png);
+    background-repeat: no-repeat;
+}
+
+
+
+/* Logos de abajo */
+.header .logo1{
     cursor: pointer;
 }
 
-.header .logo img{
-    height: 70px;
-    width: auto;
+.header .logo1 img{
+    height: 52px;
+    width: 30;
     transition: all 0.3s;
 }
 
-.header .logo img:hover{
-    transform: scale(1.2);
+.header .logo1 img:hover{
+    transform: scale(2.3);
 }
+
+/* */
 
 .header .nav-links{
     list-style: none;
 }
 
-.header .nav-links li{
+.header .nav-links li {
     display: inline-block;
-    padding: 0 20px;    
-}
-
-.header .nav-links li:hover{
-    transform: scale(1.1);
+    margin-right: 360px; 
 }
 
 .header .nav-links a{
@@ -54,31 +71,56 @@ body{
     text-decoration: none;    
 }
 
-.header .nav-links li a:hover{
-    color: #ffbc0e;
+.header .nav-links li.with-underline a:hover {
+    text-decoration: underline;
 }
 
 .header .btn button{
-    font-weight: 700;
+    font-family:'GT America Standard', sans-serif;
+    font-weight: 400;
+    font-size: 25px; /* Ajusta el tamaño de la fuente según sea necesario */
     color: white;
-    padding: 9px 25px;
+    padding: 6px 15px;
     background: #4C5FD5;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
+.header .botn button {
+    font-family: 'GT America Standard', sans-serif;
+    font-weight: 400;
+    font-size: 25px; /* Ajusta el tamaño de la fuente según sea necesario */
+    color: white;
+    padding: 6px 15px; /* Ajusta el relleno según sea necesario */
+    width: auto; /* Hace que el ancho del botón se ajuste automáticamente al contenido */
+    background: #0a0a0a;
+    border: 2px solid white;
+    border-radius: 8px; /* Ajusta el radio de la esquina según sea necesario */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+
+.header .btn button:hover {
+    background-color: #1a1a1a; /* Color de fondo al pasar el mouse */
+}
+
 
 .header .btn button:hover{
     background-color: white;
     color: black;
 }
+
 .container{
     position: absolute;
-    top: 50%;
+    top:  50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 input.search{
     padding: 9px 10px 9px 32px;
     outline: none;
@@ -88,9 +130,10 @@ input.search{
     border: 3px solid #a50559;
     background: #fff url("assets/right-arrow-alt-regular-24.png") 
         no-repeat 9px center;
-        width: 60px;
-        transition: all .5s;
+    width: 60px;
+    transition: all .5s;
 }
+
 input.search:hover{
     width: 200px;
     background-color: #fff;
