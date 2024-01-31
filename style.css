@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif, 'GT America Standard'; 
-    font-size: 24px;
+    font-size: 22px;
 
 }
 
@@ -123,16 +123,17 @@ body{
 
 input.search{
     justify-content: center;
-    text-align: center;
+    text-align: left;
     padding: 9px 10px 9px 32px;
     outline: none;
-    font-size: 18px;
+    font-size: 35px;
     border: 10px;
+    border-radius: 6px;
     color: #444;
-    border: 3px solid black;
+    border: 1px solid black;
     background: #fff url("assets/right-arrow-alt-regular-24.png") 
         no-repeat 9px center;
-    width: 600px;
+    width: 700px;
     transition: all .5s;
 }
 
@@ -141,14 +142,15 @@ input.search{
     font-family: 'GT America Standard', sans-serif;
     color: #000000;
     font-size: 80px;
+    line-height: 76px;
     letter-spacing: -4px;
-    line-height: 76ox;
+    line-height: 240px;
     font-weight: 400;
     margin: 0 0 1rem;
 }
 .seccion {
     text-align: center;
-    height: 300px;
+    height: 400px;
     position: relative;
     background-color: #DADBF1;
     color: #fff;
@@ -156,4 +158,85 @@ input.search{
 }
 .search{
     position: relative;
+}
+.seccionw {
+    text-align: center;
+    height: 1000px;
+    position: relative;
+    background-color: #ffffff;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.secciones {
+    text-align: center;
+    background-color: #ffffff;
+    color: #333;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.columna {
+    width: 40%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row; /* Cambiado a fila para alinear el logo y el contenido horizontalmente */
+    align-items: flex-start; /* Alinear los elementos al comienzo del eje transversal (vertical) */
+}
+
+.logo img {
+    width: 50%;
+    height: auto;
+    margin-right: 10px; /* Añadido margen derecho para separar el logo del título */
+}
+
+.contenido {
+    width: 100%;
+}
+
+.contenido h2, .contenido p {
+    text-align: left;
+}
+
+.contenido h2 {
+    font-size: 1.1em;
+    color: #000000;
+    font-family: inherit;
+}
+
+.contenido p {
+    margin-top: 0;
+    font-size: 1em;
+    color: #000000;
+    font-family: inherit;
+}
+
+.contenido p1 {
+    margin-top: 0;
+    font-size: 0.9em;
+    color: rgb(41, 100, 209);
+    text-align:justify;
+    font-family: inherit;
+}
+
+.columna, .contenido {
+    padding: 0 5px;
+}
+
+hr {
+    border: 1px solid #ffffff; /* Estilo del borde */
+    margin: 70px 0; /* Márgenes superior e inferior */
 }
